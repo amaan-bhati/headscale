@@ -9,7 +9,6 @@ import (
 	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/stretchr/testify/assert"
 )
-
 func TestUnmarshallOIDCClaims(t *testing.T) {
 	tests := []struct {
 		name    string

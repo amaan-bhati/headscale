@@ -9,6 +9,7 @@ import (
 	"tailscale.com/tailcfg"
 )
 
+
 func TestParsing(t *testing.T) {
 	users := types.Users{
 		{Model: gorm.Model{ID: 1}, Name: "testuser"},

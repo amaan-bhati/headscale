@@ -16,7 +16,6 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
-
 func TestAuthKeyLogoutAndReloginSameUser(t *testing.T) {
 	IntegrationSkip(t)
 	t.Parallel()

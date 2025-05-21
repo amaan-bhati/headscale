@@ -17,6 +17,7 @@ import (
 	"tailscale.com/types/key"
 )
 
+
 func TestTailNode(t *testing.T) {
 	mustNK := func(str string) key.NodePublic {
 		var k key.NodePublic

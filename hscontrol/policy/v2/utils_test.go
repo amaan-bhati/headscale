@@ -7,7 +7,6 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"tailscale.com/tailcfg"
 )
-
 // TestParseDestinationAndPort tests the parseDestinationAndPort function using table-driven tests.
 func TestParseDestinationAndPort(t *testing.T) {
 	testCases := []struct {

@@ -26,26 +26,20 @@ var retry = func(times int, sleepInterval time.Duration,
 	var result string
 	var stderr string
 	var err error
-
 	for range times {
 		tempResult, tempStderr, err := doWork()
-
 		result += tempResult
 		stderr += tempStderr
-
 		if err == nil {
 			return result, stderr, nil
 		}
-
 		// If we get a permission denied error, we can fail immediately
 		// since that is something we won-t recover from by retrying.
 		if err != nil && isSSHNoAccessStdError(stderr) {
 			return result, stderr, err
 		}
-
 		time.Sleep(sleepInterval)
 	}
-
 	return result, stderr, err
 }
 

@@ -6,6 +6,8 @@ import (
 	"gopkg.in/check.v1"
 )
 
+
+
 func (*Suite) TestCreateAPIKey(c *check.C) {
 	apiKeyStr, apiKey, err := db.CreateAPIKey(nil)
 	c.Assert(err, check.IsNil)

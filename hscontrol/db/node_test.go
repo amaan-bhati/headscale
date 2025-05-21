@@ -10,7 +10,6 @@ import (
 	"sync"
 	"testing"
 	"time"
-
 	"github.com/google/go-cmp/cmp"
 	"github.com/juanfont/headscale/hscontrol/policy"
 	"github.com/juanfont/headscale/hscontrol/types"
@@ -24,6 +23,7 @@ import (
 	"tailscale.com/types/key"
 	"tailscale.com/types/ptr"
 )
+
 
 func (s *Suite) TestGetNode(c *check.C) {
 	user, err := db.CreateUser(types.User{Name: "test"})

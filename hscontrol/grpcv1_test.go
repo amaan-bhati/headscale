@@ -1,7 +1,6 @@
 package hscontrol
 
 import "testing"
-
 func Test_validateTag(t *testing.T) {
 	type args struct {
 		tag string

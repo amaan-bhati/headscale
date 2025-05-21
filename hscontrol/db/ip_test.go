@@ -5,7 +5,6 @@ import (
 	"net/netip"
 	"strings"
 	"testing"
-
 	"github.com/davecgh/go-spew/spew"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
@@ -21,6 +20,7 @@ var mpp = func(pref string) *netip.Prefix {
 	p := netip.MustParsePrefix(pref)
 	return &p
 }
+
 
 var na = func(pref string) netip.Addr {
 	return netip.MustParseAddr(pref)

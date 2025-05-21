@@ -12,7 +12,6 @@ import (
 	"github.com/stretchr/testify/assert"
 	"tailscale.com/tailcfg"
 )
-
 func TestResolveMagicDNS(t *testing.T) {
 	IntegrationSkip(t)
 	t.Parallel()

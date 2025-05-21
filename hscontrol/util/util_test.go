@@ -8,7 +8,6 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 )
-
 func TestTailscaleVersionNewerOrEqual(t *testing.T) {
 	type args struct {
 		minimum string

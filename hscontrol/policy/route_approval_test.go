@@ -18,7 +18,6 @@ func TestNodeCanApproveRoute(t *testing.T) {
 		{Name: "user2", Model: gorm.Model{ID: 2}},
 		{Name: "user3", Model: gorm.Model{ID: 3}},
 	}
-
 	// Create standard node setups used across tests
 	normalNode := types.Node{
 		ID:       1,
@@ -27,7 +26,6 @@ func TestNodeCanApproveRoute(t *testing.T) {
 		UserID:   1,
 		User:     users[0],
 	}
-
 	exitNode := types.Node{
 		ID:       2,
 		Hostname: "user2-device",

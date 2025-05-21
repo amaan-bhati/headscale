@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"strings"
 	"testing"
-
 	"github.com/juanfont/headscale/hscontrol/types"
 	"gopkg.in/check.v1"
 	"zombiezen.com/go/postgrestest"
 )
+
 
 func Test(t *testing.T) {
 	check.TestingT(t)
