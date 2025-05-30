@@ -7,6 +7,7 @@ import (
 	"tailscale.com/tailcfg"
 )
 
+
 func TestTailscaleLatestMajorMinor(t *testing.T) {
 	tests := []struct {
 		n        int

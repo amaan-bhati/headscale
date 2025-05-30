@@ -18,7 +18,6 @@ import (
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 )
-
 func TestOIDCAuthenticationPingAll(t *testing.T) {
 	IntegrationSkip(t)
 	t.Parallel()

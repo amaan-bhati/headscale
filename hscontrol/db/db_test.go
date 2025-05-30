@@ -13,7 +13,6 @@ import (
 	"strings"
 	"testing"
 	"time"
-
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/juanfont/headscale/hscontrol/types"
@@ -23,6 +22,7 @@ import (
 	"gorm.io/gorm"
 	"zgo.at/zcache/v2"
 )
+
 
 // TestMigrationsSQLite is the main function for testing migrations,
 // we focus on SQLite correctness as it is the main database used in headscale.

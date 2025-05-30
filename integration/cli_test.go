@@ -21,7 +21,6 @@ import (
 	"tailscale.com/tailcfg"
 	"golang.org/x/exp/slices"
 )
-
 func executeAndUnmarshal[T any](headscale ControlServer, command []string, result T) error {
 	str, err := headscale.Execute(command)
 	if err != nil {

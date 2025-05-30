@@ -8,12 +8,10 @@ import (
 	"github.com/juanfont/headscale/integration/hsic"
 	"github.com/juanfont/headscale/integration/tsic"
 )
-
 type ClientsSpec struct {
 	Plain         int
 	WebsocketDERP int
 }
-
 func TestDERPServerScenario(t *testing.T) {
 	spec := ScenarioSpec{
 		NodesPerUser: 1,

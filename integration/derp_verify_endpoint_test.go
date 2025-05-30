@@ -15,7 +15,6 @@ import (
 	"github.com/juanfont/headscale/integration/tsic"
 	"tailscale.com/tailcfg"
 )
-
 func TestDERPVerifyEndpoint(t *testing.T) {
 	IntegrationSkip(t)
 

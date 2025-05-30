@@ -14,7 +14,6 @@ import (
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/dnstype"
 )
-
 func TestReadConfig(t *testing.T) {
 	tests := []struct {
 		name       string

@@ -7,7 +7,6 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"go4.org/netipx"
 )
-
 func Test_parseIPSet(t *testing.T) {
 	set := func(ips []string, prefixes []string) *netipx.IPSet {
 		var builder netipx.IPSetBuilder

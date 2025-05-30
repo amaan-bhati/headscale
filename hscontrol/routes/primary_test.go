@@ -16,7 +16,6 @@ import (
 func mp(prefix string) netip.Prefix {
 	return netip.MustParsePrefix(prefix)
 }
-
 func TestPrimaryRoutes(t *testing.T) {
 	tests := []struct {
 		name              string
@@ -25,7 +24,6 @@ func TestPrimaryRoutes(t *testing.T) {
 		expectedPrimaries map[netip.Prefix]types.NodeID
 		expectedIsPrimary map[types.NodeID]bool
 		expectedChange    bool
-
 		// primaries is a map of prefixes to the node that is the primary for that prefix.
 		primaries map[netip.Prefix]types.NodeID
 		isPrimary map[types.NodeID]bool

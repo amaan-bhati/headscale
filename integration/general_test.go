@@ -23,7 +23,6 @@ import (
 	"tailscale.com/client/tailscale/apitype"
 	"tailscale.com/types/key"
 )
-
 func TestPingAllByIP(t *testing.T) {
 	IntegrationSkip(t)
 	t.Parallel()

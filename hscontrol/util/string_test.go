@@ -6,7 +6,6 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
-
 func TestGenerateRandomStringDNSSafe(t *testing.T) {
 	for range 100000 {
 		str, err := GenerateRandomStringDNSSafe(8)

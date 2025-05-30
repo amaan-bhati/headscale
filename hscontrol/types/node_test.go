@@ -14,7 +14,6 @@ import (
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/key"
 )
-
 func Test_NodeCanAccess(t *testing.T) {
 	iap := func(ipStr string) *netip.Addr {
 		ip := netip.MustParseAddr(ipStr)

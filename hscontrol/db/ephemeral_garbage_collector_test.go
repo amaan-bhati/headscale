@@ -5,11 +5,13 @@ import (
 	"runtime"
 	"sync"
 	"testing"
+
 	"time"
 
 	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/stretchr/testify/assert"
 )
+
 
 const fiveHundredMillis = 500 * time.Millisecond
 const oneHundredMillis = 100 * time.Millisecond

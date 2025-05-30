@@ -8,7 +8,6 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/juanfont/headscale/hscontrol/types"
 )
-
 func TestCanUsePreAuthKey(t *testing.T) {
 	now := time.Now()
 	past := now.Add(-time.Hour)

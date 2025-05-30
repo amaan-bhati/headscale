@@ -6,7 +6,6 @@ import (
 
 	"github.com/stretchr/testify/assert"
 )
-
 func TestCheckForFQDNRules(t *testing.T) {
 	type args struct {
 		name string

@@ -2,13 +2,13 @@ package db
 
 import (
 	"strings"
-
 	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/juanfont/headscale/hscontrol/util"
 	"gopkg.in/check.v1"
 	"gorm.io/gorm"
 	"tailscale.com/types/ptr"
 )
+
 
 func (s *Suite) TestCreateAndDestroyUser(c *check.C) {
 	user, err := db.CreateUser(types.User{Name: "test"})

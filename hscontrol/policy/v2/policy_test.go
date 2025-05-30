@@ -11,6 +11,7 @@ import (
 	"tailscale.com/tailcfg"
 )
 
+
 func node(name, ipv4, ipv6 string, user types.User, hostinfo *tailcfg.Hostinfo) *types.Node {
 	return &types.Node{
 		ID:       0,
