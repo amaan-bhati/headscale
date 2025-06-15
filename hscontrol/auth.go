@@ -34,6 +34,7 @@ func (h *Headscale) handleRegister(
 		return nil, fmt.Errorf("looking up node in database: %w", err)
 	}
 
+	fmt.Println("HI there")
 	if node != nil {
 		resp, err := h.handleExistingNode(node, regReq, machineKey)
 		if err != nil {
